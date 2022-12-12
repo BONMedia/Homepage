@@ -30,6 +30,8 @@ var cateList = Object.keys(category).map(cateTitle => {
 	}; 
 });
 
+console.log(cateList);
+
 const slideSettings = {
     infinite: true,
     slidesToShow: 1,
@@ -82,7 +84,7 @@ return (
 			</div>
 			<div className="cat-carousel-inner">
 				<ul className="category-list-wrapper">
-					{cateList.slice(5, 9).map((data) => (
+					{cateList.slice(4, 9).map((data) => (
 					<li className="category-list perfect-square" key={data.slug}>
 						<Link href={`/category/${data.slug}`}>
 						<a className="list-inner">
@@ -104,7 +106,7 @@ return (
 					))}
 				</ul>
 			</div>
-			<div className="cat-carousel-inner">
+			{/* <div className="cat-carousel-inner">
 				<ul className="category-list-wrapper">
 					{cateList.slice(10, 14).map((data) => (
 					<li className="category-list perfect-square" key={data.slug}>
@@ -127,7 +129,7 @@ return (
 					</li>
 					))}
 				</ul>
-			</div>
+			</div> */}
         </Slider>
       </div>
     </div>

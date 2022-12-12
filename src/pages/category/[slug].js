@@ -14,19 +14,18 @@ import WidgetCategory from "../../components/widget/WidgetCategory";
 
 const PostCategory = ({ postData, allPosts }) => {
     const cateContent = postData[0];
-
     return (
         <>
-            <HeadMeta metaTitle={cateContent.cate}/>
+            <HeadMeta metaTitle={cateContent.cateKR}/>
             <HeaderOne />
-            <Breadcrumb aPage={cateContent.cate} />
+            <Breadcrumb aPage={cateContent.cateKR} />
             {/* Banner Start here  */}
             <div className="banner banner__default bg-grey-light-three">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12">
                             <div className="post-title-wrapper">
-                                <h2 className="m-b-xs-0 axil-post-title hover-line">{cateContent.cate}</h2>
+                                <h2 className="m-b-xs-0 axil-post-title hover-line">{cateContent.cateKR}</h2>
                             </div>
                         </div>
                     </div>
@@ -71,6 +70,7 @@ export async function getStaticProps({ params }) {
     const allPosts = getAllPosts([
         'slug',
         'cate',
+        'cateKR',
         'cate_img',
         'title',
         'excerpt',

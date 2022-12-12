@@ -96,6 +96,7 @@ export async function getStaticProps({ params }) {
     const allPosts = getAllPosts([
         'slug',
         'cate',
+        'cateKR',
         'cate_img',
         'title',
         'excerpt',

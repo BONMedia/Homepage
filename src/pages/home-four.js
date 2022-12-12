@@ -31,6 +31,7 @@ export async function getStaticProps() {
     'excerpt',
     'featureImg',
     'cate',
+    'cateKR',
     'cate_bg',
     'cate_img',
     'author_name',

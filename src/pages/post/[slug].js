@@ -35,7 +35,7 @@ const PostDetails = ({postContent, allPosts}) => {
         <>
 		<HeadMeta metaTitle="Post Details"/>
         <HeaderOne />
-        <Breadcrumb bCat={postContent.cate} aPage={postContent.title}/>
+        <Breadcrumb bCat={postContent.cateKR} aPage={postContent.title}/>
 		<PostFormatHandler />
 		<PostSectionSix postData={allPosts} />
         <FooterOne />
@@ -57,6 +57,7 @@ export async function getStaticProps({ params }) {
 		'date',
 		'slug',
 		'cate',
+		'cateKR',
 		'cate_bg',
 		'author_name',
 		'author_img',
@@ -75,6 +76,7 @@ export async function getStaticProps({ params }) {
 		'date',
 		'slug',
 		'cate',
+		'cateKR',
 		'cate_bg',
 		'cate_img',
 		'author_name',

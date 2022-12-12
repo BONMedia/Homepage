@@ -19,7 +19,7 @@ const PostLayoutFive = ({ data, index }) => {
       <div className="media-body">
         <div className="post-cat-group m-b-xs-15">
 			<Link href={`/category/${slugify(data.cate)}`}>
-				<a className={`post-cat cat-btn btn-big ${data.cate_bg ?? "bg-color-blue-one"}`}>{data.cate}</a>
+				<a className={`post-cat cat-btn btn-big ${data.cate_bg ?? "bg-color-blue-one"}`}>{data.cateKR}</a>
 			</Link>
         </div>
         <h3 className="axil-post-title hover-line">

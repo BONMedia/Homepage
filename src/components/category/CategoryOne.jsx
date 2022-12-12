@@ -9,7 +9,9 @@ const CategoryOne = ({cateData}) => {
             thumb: data.cate_img
         }
         return obj;
-    });
+    }
+    );
+    console.log(categories);
     
     const category = categories.reduce((prev, curr) => {
         prev[curr.name] = (prev[curr.name] || 0) + 1
