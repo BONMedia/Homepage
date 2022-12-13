@@ -8,7 +8,7 @@ const PostSectionTwo = ({ postData }) => {
   return (
     <div className="section-gap section-gap-top__with-text top-stories bg-grey-light-three" style={{border:'1px solid blue'}}>
       <div className="container">
-        <SectionTitle title="Top Stories" btnText="All Top Stories" />
+        <SectionTitle title="Hot Topics" btnText="All Hot Topics" />
         <div className="row">
           <div className="col-lg-8">
           	{storyPost.slice(0, 1).map((data) => (

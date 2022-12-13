@@ -26,9 +26,9 @@ const PostSectionFive = ({postData, adBanner, pClass}) => {
                             <WidgetAd />
                             <WidgetNewsletter />
                             <WidgetCategory cateData={postData} />
-                            <WidgetSocialShare />
+                            {/* <WidgetSocialShare /> */}
                             <WidgetPost dataPost={postData} />
-                            <WidgetInstagram />
+                            {/* <WidgetInstagram /> */}
                         </div>
                     </div>
                 </div>

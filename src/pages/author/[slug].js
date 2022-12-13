@@ -10,6 +10,7 @@ import WidgetCategory from "../../components/widget/WidgetCategory";
 import WidgetPost from "../../components/widget/WidgetPost";
 import WidgetSocialShare from "../../components/widget/WidgetSocialShare";
 import { slugify } from "../../utils";
+import FooterTwo from "../../components/footer/FooterTwo";
 
 const PostAuthor = ({postData, allPosts}) => {
     const authorContent = postData[0];
@@ -82,7 +83,7 @@ const PostAuthor = ({postData, allPosts}) => {
                 </div>
             </div>
         </div>
-        <FooterOne />
+        <FooterTwo />
         </>
      );
 }

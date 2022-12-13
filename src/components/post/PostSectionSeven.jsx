@@ -10,7 +10,7 @@ const PostSectionSeven = ({postData}) => {
     return ( 
        <div className="axil-video-posts section-gap section-gap-top__with-text bg-grey-dark-one" style={{border:'1px solid pink'}}>
             <div className="container">
-                <SectionTitle pClass="title-white m-b-xs-40" title="Top Stories" btnText="All TOP STORIES"/>
+                <SectionTitle pClass="title-white m-b-xs-40" title="Hot Topics" btnText="All HOT TOPICS"/>
                 <div className="row">
                     <div className="col-lg-6">
                         {videoStory.slice(0, 1).map((data) => (

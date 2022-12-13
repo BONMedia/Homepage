@@ -11,6 +11,7 @@ import PostFormatStandard from "../../components/post/post-format/PostFormatStan
 import PostFormatText from "../../components/post/post-format/PostFormatText";
 import PostFormatVideo from "../../components/post/post-format/PostFormatVideo";
 import PostSectionSix from "../../components/post/PostSectionSix";
+import FooterTwo from "../../components/footer/FooterTwo";
 
 
 const PostDetails = ({postContent, allPosts}) => {
@@ -38,7 +39,7 @@ const PostDetails = ({postContent, allPosts}) => {
         <Breadcrumb bCat={postContent.cateKR} aPage={postContent.title}/>
 		<PostFormatHandler />
 		<PostSectionSix postData={allPosts} />
-        <FooterOne />
+        <FooterTwo />
         </>
      );
 }
