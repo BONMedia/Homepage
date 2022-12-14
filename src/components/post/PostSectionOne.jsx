@@ -2,12 +2,17 @@ import { SortingByDate } from "../../utils";
 import SectionTitle from "../elements/SectionTitle";
 import PostLayoutOne from "./layout/PostLayoutOne";
 import PostLayoutTwo from "./layout/PostLayoutTwo";
+import AdBanner from "../common/AdBanner";
 
 const PostSectionOne = ({postData}) => {
     SortingByDate(postData);
     return (
-      <div className="recent-news-wrapper section-gap p-t-xs-15 p-t-sm-60" style={{border:'1px solid red'}}>
+      <div className="recent-news-wrapper section-gap p-t-xs-15">
         <div className="container">
+          <div>
+          <AdBanner width={'1456'} height={'180'}/>
+          </div>
+         
           <div className="row">
             <div className="col-lg-6">
               {postData.slice(0, 1).map((data) => (

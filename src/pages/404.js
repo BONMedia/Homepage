@@ -16,7 +16,7 @@ const ErrorPage = () => {
                             <h1 className="h1 m-b-xs-20 m-b-md-40">
                                 Sorry, This Page Doesn&apos;t Exist.
                             </h1>
-                            <Link href="/">
+                            <Link legacyBehavior href="/">
                                 <a className="btn btn-primary">BACK TO HOMEPAGE</a>
                             </Link>
                         </div>

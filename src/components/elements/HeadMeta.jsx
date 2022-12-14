@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from "next/link";
 
 const HeadMeta = ({metaTitle}) => {
     return ( 
@@ -10,7 +11,7 @@ const HeadMeta = ({metaTitle}) => {
             <meta name="description" content="Papr Trendy News and Megazine Template" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <title>{`${metaTitle?metaTitle:"Papr"} || Papr - Trendy News and Megazine React JS Template`}</title>
-            <link rel="icon" type="image/x-icon" href={`${process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH ?? '' : ''}/favicon.ico`} />
+            <Link rel="icon" type="image/x-icon" href={`${process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH ?? '' : ''}/icon.png`} />
         </Head>
      );
 }

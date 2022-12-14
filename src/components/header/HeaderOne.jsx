@@ -5,7 +5,7 @@ import { dateFormate } from "../../utils";
 import SocialLink from "../../data/social/SocialLink.json";
 import MenuData from "../../data/menu/HeaderMenu.json";
 import OffcanvasMenu from "./OffcanvasMenu";
-
+import InfiniteSlider from "../slider/InfiniteSlider";
 const HeaderOne = () => {
   // Main Menu Toggle
   var menuRef = useRef();
@@ -97,17 +97,17 @@ const HeaderOne = () => {
                 <ul className="header-top-nav list-inline justify-content-center justify-content-md-start">
                   <li className="current-date">{dateFormate()}</li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                       <a>Advertisement</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about-us">
+                    <Link legacyBehavior href="/about-us">
                       <a>About</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a>Contact</a>
                     </Link>
                   </li>
@@ -140,11 +140,12 @@ const HeaderOne = () => {
             </div>
           </div>
         </div>
+        <InfiniteSlider/>
         <nav className="navbar bg-white">
           <div className="container">
             <div className="navbar-inner">
               <div className="brand-logo-container">
-                <Link href="/">
+                <Link legacyBehavior href="/">
                   <a>
                     <Image
                       src="/images/Primary_black.png"
@@ -160,13 +161,11 @@ const HeaderOne = () => {
                   {MenuData.map((data, index) =>
                     data.submenu ? (
                       <li className="has-dropdown" key={index}>
-                        <Link href={data.path}>
-                          <a>{data.label}</a>
-                        </Link>
+                      <a>{data.label}</a>
                         <ul className="submenu">
                           {data.submenu.map((data, index) => (
                             <li key={index}>
-                              <Link href={data.subpath}>
+                              <Link legacyBehavior href={data.subpath}>
                                 <a>{data.sublabel}</a>
                               </Link>
                             </li>
@@ -175,7 +174,7 @@ const HeaderOne = () => {
                       </li>
                     ) : (
                       <li key={index}>
-                        <Link href={data.path}>
+                        <Link legacyBehavior href={data.path}>
                           <a>{data.label}</a>
                         </Link>
                       </li>

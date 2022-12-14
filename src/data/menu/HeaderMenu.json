@@ -21,15 +21,15 @@
     },
     {
         "label": "크립토닷컴",
-        "path": "/category/crypto",
+        "path": "#",
         "submenu": [
             {
                 "sublabel": "유니버시티",
-                "subpath": "/category/crypto/university"
+                "subpath": "/category/cryptoresearch"
             },
             {
                 "sublabel": "리서치",
-                "subpath": "/category/crypto/research"
+                "subpath": "/category/cryptoresearch"
             }
         ]
     }

@@ -14,6 +14,7 @@ import FooterTwo from "../../components/footer/FooterTwo";
 
 
 const PostCategory = ({ postData, allPosts }) => {
+
     const cateContent = postData[0];
     return (
         <>
@@ -65,7 +66,6 @@ export default PostCategory;
 
 
 export async function getStaticProps({ params }) {
-
     const postParams = params.slug;
 
     const allPosts = getAllPosts([
@@ -99,7 +99,6 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
     const posts = getAllPosts(['cate']);
-
     const paths = posts.map(post => ({
         params: {
             slug: slugify(post.cate)

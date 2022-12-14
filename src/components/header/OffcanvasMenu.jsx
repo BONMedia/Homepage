@@ -21,22 +21,22 @@ const OffcanvasMenu = ({ofcshow, ofcHandleClose}) => {
                         <div className="col-lg-6">
                         <ul className="main-navigation side-navigation list-inline flex-column">
                             <li>
-                                <Link href="/category/fashion">
+                                <Link legacyBehavior href="/category/fashion">
                                     <a>Fashion</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/category/lifestyle">
+                                <Link legacyBehavior href="/category/lifestyle">
                                     <a>Lifestyle</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/category/technology">
+                                <Link legacyBehavior href="/category/technology">
                                     <a>Technology</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/category/sports">
+                                <Link legacyBehavior href="/category/sports">
                                     <a>Sports</a>
                                 </Link>
                             </li>

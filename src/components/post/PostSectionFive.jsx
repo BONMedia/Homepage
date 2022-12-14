@@ -8,14 +8,27 @@ import WidgetSocialShare from "../widget/WidgetSocialShare";
 import PostLayoutTwo from "./layout/PostLayoutTwo";
 
 const PostSectionFive = ({postData, adBanner, pClass}) => {
-    return ( 
+    const uniqueIds = [];
+
+    const unique = postData.filter(post => {
+        const isDuplicate = uniqueIds.includes (post.cate)
+        if (!isDuplicate) {
+            uniqueIds.push(post.cate);
+        
+            return true;
+          }
+        
+          return false;
+    })
+
+ return ( 
         <div className={`random-posts ${pClass ?? "section-gap"}`} style={{border:'1px solid green'}}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">
                         {adBanner === true ? <AdBanner /> : "" }
                         <div className="axil-content">
-                            {postData.slice(0, 8).map((data) => (
+                            {unique.map((data) => (
                                 <PostLayoutTwo data={data} postSizeMd={true} key={data.slug}/>
                             ))}
 

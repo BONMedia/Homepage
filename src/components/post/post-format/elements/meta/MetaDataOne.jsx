@@ -108,7 +108,7 @@ const MetaDataOne = ({ metaData, postData, allData }) => {
           {/* <div className="col-lg-6">
               <div className="post-title-wrapper">
                 <div className="btn-group">
-                    <Link href={`/category/${slugify(metaData.cate)}`}>
+                    <Link legacyBehavior href={`/category/${slugify(metaData.cate)}`}>
                         <a className={`cat-btn ${metaData.cate_bg ?? "bg-color-blue-one"}`}>{metaData.cateKR}</a>
                     </Link>
                 </div>
@@ -116,7 +116,7 @@ const MetaDataOne = ({ metaData, postData, allData }) => {
                 <div className="post-metas banner-post-metas m-t-xs-20">
                   <ul className="list-inline">
                     <li>
-                        <Link href={`/author/${slugify(metaData.author_name)}`}>
+                        <Link legacyBehavior href={`/author/${slugify(metaData.author_name)}`}>
                             <a className="post-author post-author-with-img">
                                 <Image 
                                     src={metaData.author_img}

@@ -10,7 +10,7 @@ const FooterTwo = () => {
           <div className="row align-items-center">
             <div className="col-md">
               <div className="footer-logo-container">
-                <Link href="/">
+                <Link legacyBehavior href="/">
                   <a>
                     <Image
                       src="/images/Primary_white.png"
@@ -69,32 +69,32 @@ const FooterTwo = () => {
         <div className="footer-bottom">
           <ul className="footer-bottom-links">
             <li>
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a>회사소개</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a>문의</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a>제보 및 광고</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a>이용약관</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a>청소년보호정책</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a>개인정보 취급방침</a>
               </Link>
             </li>

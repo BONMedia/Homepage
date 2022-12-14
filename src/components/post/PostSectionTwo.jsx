@@ -1,13 +1,14 @@
 import SectionTitle from "../elements/SectionTitle";
 import PostLayoutThree from "./layout/PostLayoutThree";
-
+import AdBanner from "../common/AdBanner";
 const PostSectionTwo = ({ postData }) => {
 
   const storyPost = postData.filter(post => post.story === true);
 
   return (
-    <div className="section-gap section-gap-top__with-text top-stories bg-grey-light-three" style={{border:'1px solid blue'}}>
+    <div className="section-gap section-gap-top__with-text top-stories bg-grey-light-three" >
       <div className="container">
+      <AdBanner width={'1456'} height={'180'}/>
         <SectionTitle title="Hot Topics" btnText="All Hot Topics" />
         <div className="row">
           <div className="col-lg-8">

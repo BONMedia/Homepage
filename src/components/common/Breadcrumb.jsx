@@ -8,13 +8,13 @@ const Breadcrumb = ({bCat, aPage, cLink}) => {
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-                <Link href="/">
+                <Link legacyBehavior  href="/">
                     <a>Home</a>
                 </Link>
             </li>
             {cLink &&  bCat? 
             <li className="breadcrumb-item">
-                <Link href={`/category/${slugify(cLink)}`} >
+                <Link legacyBehavior   href={`/category/${slugify(cLink)}`} >
                     <a>{bCat}</a>
                 </Link>
             </li>: ""

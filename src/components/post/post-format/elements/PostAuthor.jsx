@@ -8,7 +8,7 @@ const PostAuthor = ({authorData}) => {
   return (
     <div className="about-author m-b-xs-60">
       <div className="media">
-        <Link href={`/author/${slugify(authorData.author_name)}`}>
+        <Link legacyBehavior href={`/author/${slugify(authorData.author_name)}`}>
             <a>
                 <Image
                 src={authorData.author_img}
@@ -22,7 +22,7 @@ const PostAuthor = ({authorData}) => {
         <div className="media-body">
           <div className="media-body-title">
             <h3>
-                <Link href={`/author/${slugify(authorData.author_name)}`}>
+                <Link legacyBehavior href={`/author/${slugify(authorData.author_name)}`}>
                     <a>{authorData.author_name}</a>
                 </Link>
             </h3>

@@ -5,7 +5,7 @@ import { slugify } from "../../../utils";
 const PostVideoTwo = ({ data, pClass, videoIcon }) => {
   return (
     <div className={`media post-block post-block__small ${pClass ?? "post-block__on-dark-bg m-b-xs-30"}`}>
-      <Link href={`/post/${data.slug}`}>
+      <Link legacyBehavior href={`/post/${data.slug}`}>
             <a className="align-self-center">
             <Image
             src={data.featureImg}
@@ -19,12 +19,12 @@ const PostVideoTwo = ({ data, pClass, videoIcon }) => {
       
       <div className="media-body">
         <div className="post-cat-group">
-			<Link href={`/category/${slugify(data.cate)}`}>
+			<Link legacyBehavior href={`/category/${slugify(data.cate)}`}>
                 <a className={`post-cat ${data.cate_bg ?? "bg-color-blue-one"}`}>{data.cateKR}</a>
             </Link>
         </div>
         <h3 className="axil-post-title hover-line hover-line">
-           <Link href={`/post/${data.slug}`}>
+           <Link legacyBehavior legacyBehavior href={`/post/${data.slug}`}>
 				<a>{data.title}</a>
 			</Link>
         </h3>
@@ -32,7 +32,7 @@ const PostVideoTwo = ({ data, pClass, videoIcon }) => {
           <ul className="list-inline">
             <li>
 				<span>By</span>
-				<Link href={`/author/${slugify(data.author_name)}`}>
+				<Link legacyBehavior href={`/author/${slugify(data.author_name)}`}>
 					<a className="post-author">{data.author_name}</a>
 				</Link>
             </li>

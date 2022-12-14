@@ -89,7 +89,7 @@ const HeaderFour = () => {
 				<div className="container-fluid p-l-md-80 p-r-md-80">
 					<div className="navbar-inner">
 						<div className="brand-logo-container">
-							<Link href="/">
+							<Link legacyBehavior href="/">
 								<a> 
 									<Image 
 									src="/images/Primary_black.png"
@@ -106,20 +106,20 @@ const HeaderFour = () => {
 									MenuData.map((data, index) => (
 										data.submenu ? 
 										<li className="has-dropdown" key={index}>
-											<Link href={data.path}>
+											<Link legacyBehavior href={data.path}>
 												<a>{data.label}</a>
 											</Link>
 											<ul className="submenu">
 												{data.submenu.map((data, index) => (
 													data.thirdmenu ? 
 													<li className="has-dropdown" key={index}>
-														<Link href={data.subpath}>
+														<Link legacyBehavior href={data.subpath}>
 															<a>{data.sublabel}</a>
 														</Link>
 														<ul className="submenu">
 															{data.thirdmenu.map((data, index) => (
 																<li key={index}>
-																	<Link href={data.tpath}>
+																	<Link legacyBehavior href={data.tpath}>
 																		<a>{data.tlabel}</a>
 																	</Link>
 																</li>
@@ -127,7 +127,7 @@ const HeaderFour = () => {
 														</ul>
 													</li> :
 													<li key={index}>
-														<Link href={data.subpath}>
+														<Link legacyBehavior href={data.subpath}>
 															<a>{data.sublabel}</a>
 														</Link>
 													</li>
@@ -135,7 +135,7 @@ const HeaderFour = () => {
 											</ul>
 										</li>:
 										<li key={index}>
-											<Link href={data.path}>
+											<Link legacyBehavior href={data.path}>
 												<a>{data.label}</a>
 											</Link>
 										</li>

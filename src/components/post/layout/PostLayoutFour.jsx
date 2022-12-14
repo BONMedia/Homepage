@@ -5,7 +5,7 @@ import { slugify } from "../../../utils";
 const PostLayoutFour = ({ data }) => {
   return (
     <div className="content-block m-b-xs-30">
-		<Link href={`/post/${data.slug}`}>
+		<Link legacyBehavior  href={`/post/${data.slug}`}>
 			<a>
 				<Image
 					src={data.featureImg}
@@ -20,13 +20,13 @@ const PostLayoutFour = ({ data }) => {
       <div className="media-caption">
         <div className="caption-content">
           <h3 className="axil-post-title hover-line hover-line">
-		  		<Link href={`/post/${data.slug}`}>
+		  		<Link legacyBehavior  href={`/post/${data.slug}`}>
 					<a>{data.title}</a>
 				</Link>
           </h3>
           <div className="caption-meta">
 		  		<span>By</span>
-				<Link href={`/author/${slugify(data.author_name)}`}>
+				<Link legacyBehavior  href={`/author/${slugify(data.author_name)}`}>
 					<a className="post-author">{data.author_name}</a>
 				</Link>
           </div>

@@ -42,7 +42,7 @@ const SliderThree = ({ postData }) => {
                   <ul className="list-inline">
                     <li>
                       <span>By</span>
-                      <Link href={`/author/${slugify(firstPost.author_name)}`}>
+                      <Link legacyBehavior href={`/author/${slugify(firstPost.author_name)}`}>
                         <a className="post-author">{firstPost.author_name}</a>
                       </Link>
                     </li>
@@ -50,7 +50,7 @@ const SliderThree = ({ postData }) => {
                 </div>
                 {/* End of .post-metas */}
                 <h2 className="m-t-xs-20 m-b-xs-10 axil-post-title hover-line color-white txt-shadow  load-anim">
-                  <Link href={`/post/${firstPost.slug}`}>
+                  <Link legacyBehavior href={`/post/${firstPost.slug}`}>
                     <a>{firstPost.title}</a>
                   </Link>
                 </h2>
@@ -58,7 +58,7 @@ const SliderThree = ({ postData }) => {
                   {firstPost.excerpt}
                 </p>
                 <div className="load-anim">
-                  <Link href={`/post/${firstPost.slug}`}>
+                  <Link legacyBehavior href={`/post/${firstPost.slug}`}>
                     <a className="btn btn-primary">READ MORE</a>
                   </Link>
                 </div>
@@ -80,7 +80,7 @@ const SliderThree = ({ postData }) => {
                   >
                     <div className="media-body">
                       <h3 className="axil-post-title hover-line">
-                        <Link href={`/post/${data.slug}`}>
+                        <Link legacyBehavior href={`/post/${data.slug}`}>
                           <a>{data.title}</a>
                         </Link>
                       </h3>

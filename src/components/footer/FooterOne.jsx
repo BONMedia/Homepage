@@ -13,47 +13,47 @@ const FooterOne = () => {
                 <h2 className="footer-widget-title">World</h2>
                 <ul className="footer-nav">
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>U.N.</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Conflicts</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Terrorism</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Disasters</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Global Economy</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Global Economy</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Environment</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Religion</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Scandals</a>
                     </Link>
                   </li>
@@ -68,37 +68,37 @@ const FooterOne = () => {
                 <h2 className="footer-widget-title">Politics</h2>
                 <ul className="footer-nav">
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Executive</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Senate</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>House</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Judiciary</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Foreign policy</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Polls</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                         <a>Elections</a>
                     </Link>
                   </li>
@@ -113,32 +113,32 @@ const FooterOne = () => {
                 <h2 className="footer-widget-title">Entertainment</h2>
                 <ul className="footer-nav">
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Celebrity News</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Movies</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>TV News</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Music News</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Style News</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Entertainment Video</a>
                     </Link>
                   </li>
@@ -153,27 +153,27 @@ const FooterOne = () => {
                 <h2 className="footer-widget-title">Business</h2>
                 <ul className="footer-nav">
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Markets</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Politics</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Technology</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Features</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Business Leaders</a>
                     </Link>
                   </li>
@@ -188,32 +188,32 @@ const FooterOne = () => {
                 <h2 className="footer-widget-title">Health</h2>
                 <ul className="footer-nav">
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Healthy Living</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Medical Research</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Mental Health</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Cancer</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Heart Health</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Children&apos;s Health</a>
                     </Link>
                   </li>
@@ -228,37 +228,37 @@ const FooterOne = () => {
                 <h2 className="footer-widget-title">About</h2>
                 <ul className="footer-nav">
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Contact Us</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Careers</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Fox Around the World</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Advertise With Us</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Ad Choices</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Media Relations</a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a>Compliance</a>
                     </Link>
                   </li>
@@ -276,7 +276,7 @@ const FooterOne = () => {
           <div className="row align-items-center">
             <div className="col-md">
               <div className="footer-logo-container">
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a> 
                         <Image 
                          src="/images/Primary_white.png"
@@ -334,52 +334,52 @@ const FooterOne = () => {
         <div className="footer-bottom">
           <ul className="footer-bottom-links">
             <li>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a>Terms of Use</a>
                 </Link>
             </li>
             <li>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>Accessibility &amp; CC</a>
               </Link>
             </li>
             <li>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>AdChoices</a>
               </Link>
             </li>
             <li>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>Modern Slavery Act Statement</a>
               </Link>
             </li>
             <li>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>Advertise with us</a>
               </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a>Papr Store</a>
                 </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a>Newsletters</a>
                 </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a>Transcripts</a>
                 </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a>License Footage</a>
                 </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a>Sitemap</a>
                 </Link>
             </li>

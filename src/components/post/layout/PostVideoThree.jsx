@@ -6,7 +6,7 @@ const PostVideoThree = ({ data, imgWidth, imgHeight }) => {
 
   return (
     <div className="axil-img-container flex-height-container video-container__type-2 m-b-xs-30">
-		<Link href={`/post/${data.slug}`}>
+		<Link legacyBehavior  href={`/post/${data.slug}`}>
 			<a className="d-block h-100">
 				<Image
 					src={data.featureImg}
@@ -24,12 +24,12 @@ const PostVideoThree = ({ data, imgWidth, imgHeight }) => {
         <div className="media-body media-body__big">
           <div className="axil-media-bottom mt-auto">
             <div className="post-cat-group m-b-xs-10">
-				<Link href={`/category/${slugify(data.cate)}`}>
+				<Link legacyBehavior  href={`/category/${slugify(data.cate)}`}>
 					<a className={`post-cat cat-btn btn-big ${data.cate_bg ?? "bg-color-blue-one"}`}>{data.cateKR}</a>
 				</Link>
             </div>
             <h3 className="axil-post-title hover-line">
-				<Link href={`/post/${data.slug}`}>
+				<Link legacyBehavior  href={`/post/${data.slug}`}>
 					<a>{data.title}</a>
 				</Link>
             </h3>
@@ -37,7 +37,7 @@ const PostVideoThree = ({ data, imgWidth, imgHeight }) => {
               <ul className="list-inline">
                 <li>
 				<span>By</span>
-				<Link href={`/author/${slugify(data.author_name)}`}>
+				<Link legacyBehavior href={`/author/${slugify(data.author_name)}`}>
 					<a className="post-author">{data.author_name}</a>
 				</Link>
                 </li>

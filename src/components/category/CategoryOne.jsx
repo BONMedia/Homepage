@@ -35,7 +35,7 @@ const CategoryOne = ({cateData}) => {
           <ul className="category-list-wrapper">
                 {cateList.slice(0, 5).map((data) => (
 					<li className="category-list perfect-square" key={data.slug}>
-						<Link href={`/category/${data.slug}`}>
+						<Link legacyBehavior href={`/category/${data.slug}`}>
 						<a className="list-inner">
 							<Image
 							src={data.cateImg}

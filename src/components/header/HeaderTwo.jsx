@@ -100,24 +100,24 @@ useEffect(() => {
               <div className="col-md-4">
                 <ul className="header-top-nav list-inline justify-content-center justify-content-md-start">
                   <li>
-                    <Link href="/">
+                    <Link legacyBehavior href="/">
                       <a>Advertisement</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about-us">
+                    <Link legacyBehavior href="/about-us">
                       <a>About Us</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a>Contact</a>
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="brand-logo-container col-md-4 text-center">
-					<Link href="/">
+					<Link legacyBehavior  href="/">
 						<a>
 							<Image
 							src="/images/Primary_white.png"
@@ -172,20 +172,20 @@ useEffect(() => {
                   {MenuData.map((data, index) =>
                     data.submenu ? (
                       <li className="has-dropdown" key={index}>
-                        <Link href={data.path}>
+                        <Link legacyBehavior href={data.path}>
                           <a>{data.label}</a>
                         </Link>
                         <ul className="submenu">
                           {data.submenu.map((data, index) =>
                             data.thirdmenu ? (
                               <li className="has-dropdown" key={index}>
-                                <Link href={data.subpath}>
+                                <Link legacyBehavior href={data.subpath}>
                                   <a>{data.sublabel}</a>
                                 </Link>
                                 <ul className="submenu">
                                   {data.thirdmenu.map((data, index) => (
                                     <li key={index}>
-                                      <Link href={data.tpath}>
+                                      <Link legacyBehavior href={data.tpath}>
                                         <a>{data.tlabel}</a>
                                       </Link>
                                     </li>
@@ -194,7 +194,7 @@ useEffect(() => {
                               </li>
                             ) : (
                               <li key={index}>
-                                <Link href={data.subpath}>
+                                <Link legacyBehavior href={data.subpath}>
                                   <a>{data.sublabel}</a>
                                 </Link>
                               </li>
@@ -204,7 +204,7 @@ useEffect(() => {
                       </li>
                     ) : (
                       <li key={index}>
-                        <Link href={data.path}>
+                        <Link legacyBehavior href={data.path}>
                           <a>{data.label}</a>
                         </Link>
                       </li>

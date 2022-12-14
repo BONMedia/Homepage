@@ -14,7 +14,7 @@ const ComimgSoon = () => {
                         <div className="col-xl-5">
                             <div className="under-construction-inner-content">
                                 <div className="brand-logo-container">
-                                    <Link href="/">
+                                    <Link legacyBehavior href="/">
                                         <a>
                                             <Image 
                                             src="/images/logo-black.svg" 

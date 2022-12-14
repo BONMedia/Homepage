@@ -61,7 +61,7 @@ return (
 				<ul className="category-list-wrapper">
 					{cateList.slice(0, 4).map((data) => (
 					<li className="category-list perfect-square" key={data.slug}>
-						<Link href={`/category/${data.slug}`}>
+						<Link legacyBehavior href={`/category/${data.slug}`}>
 						<a className="list-inner">
 							<Image
 							src={data.cateImg}
@@ -85,7 +85,7 @@ return (
 				<ul className="category-list-wrapper">
 					{cateList.slice(4, 9).map((data) => (
 					<li className="category-list perfect-square" key={data.slug}>
-						<Link href={`/category/${data.slug}`}>
+						<Link legacyBehavior href={`/category/${data.slug}`}>
 						<a className="list-inner">
 							<Image
 							src={data.cateImg}
@@ -109,7 +109,7 @@ return (
 				<ul className="category-list-wrapper">
 					{cateList.slice(10, 14).map((data) => (
 					<li className="category-list perfect-square" key={data.slug}>
-						<Link href={`/category/${data.slug}`}>
+						<Link legacyBehavior href={`/category/${data.slug}`}>
 						<a className="list-inner">
 							<Image
 							src={data.cateImg}

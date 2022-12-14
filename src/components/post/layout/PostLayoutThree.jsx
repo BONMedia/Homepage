@@ -5,7 +5,7 @@ import { slugify } from "../../../utils";
 const PostLayoutThree = ({ data, postSizeLg, pClass, videoPost }) => {
   return (
 	<div className={`axil-img-container ${pClass ?? "m-b-xs-30"}`}>
-		<Link href={`/post/${data.slug}`}>
+		<Link legacyBehavior  href={`/post/${data.slug}`}>
 			<a className={`d-block ${videoPost === true ? "h-100" : ""}`}>
 				<Image
 					src={data.featureImg}
@@ -20,13 +20,13 @@ const PostLayoutThree = ({ data, postSizeLg, pClass, videoPost }) => {
 		<div className="media post-block position-absolute">
 		<div className={`media-body ${postSizeLg === true ? "media-body__big" : "" }`}>
 			<div className="post-cat-group m-b-xs-10">
-			<Link href={`/category/${slugify(data.cate)}`}>
+			<Link legacyBehavior  href={`/category/${slugify(data.cate)}`}>
 				<a className={`post-cat cat-btn ${data.cate_bg ?? "bg-color-blue-one"}`}>{data.cateKR}</a>
 			</Link>
 			</div>
 			<div className="axil-media-bottom">
 			<h3 className="axil-post-title hover-line hover-line">
-				<Link href={`/post/${data.slug}`}>
+				<Link legacyBehavior  href={`/post/${data.slug}`}>
 					<a>{data.title}</a>
 				</Link>
 			</h3>
@@ -34,7 +34,7 @@ const PostLayoutThree = ({ data, postSizeLg, pClass, videoPost }) => {
 				<ul className="list-inline">
 				<li>
 					<span>By</span>
-					<Link href={`/author/${slugify(data.author_name)}`}>
+					<Link legacyBehavior  href={`/author/${slugify(data.author_name)}`}>
 					<a className="post-author">{data.author_name}</a>
 					</Link>
 				</li>
