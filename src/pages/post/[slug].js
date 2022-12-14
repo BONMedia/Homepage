@@ -12,10 +12,8 @@ import PostFormatText from "../../components/post/post-format/PostFormatText";
 import PostFormatVideo from "../../components/post/post-format/PostFormatVideo";
 import PostSectionSix from "../../components/post/PostSectionSix";
 import FooterTwo from "../../components/footer/FooterTwo";
-
-
+import PostLayoutPrint from '../../components/post/layout/PostLayoutPrint'
 const PostDetails = ({postContent, allPosts}) => {
-
 	const PostFormatHandler = () => {
 		if (postContent.postFormat === 'video') {
 			return <PostFormatVideo postData={postContent} allData={allPosts}/>
@@ -36,9 +34,9 @@ const PostDetails = ({postContent, allPosts}) => {
         <>
 		<HeadMeta metaTitle="Post Details"/>
         <HeaderOne />
-        <Breadcrumb bCat={postContent.cateKR} aPage={postContent.title}/>
+        <Breadcrumb bCat={postContent.cateKR} aPage={postContent.title} cLink={postContent.cate}/>
 		<PostFormatHandler />
-		<PostSectionSix postData={allPosts} />
+		
         <FooterTwo />
         </>
      );
@@ -55,12 +53,15 @@ export async function getStaticProps({ params }) {
 		'videoLink',
 		'audioLink',
 		'gallery',
-		'date',
+		'date_created',
+		'date_edited',
 		'slug',
 		'cate',
 		'cateKR',
 		'cate_bg',
 		'author_name',
+		'author_email',
+		'author_desg',
 		'author_img',
 		'author_bio',
 		'author_social',
@@ -74,13 +75,16 @@ export async function getStaticProps({ params }) {
 		'title',
 		'featureImg',
 		'postFormat',
-		'date',
+		'date_created',
+		'date_edited',
 		'slug',
 		'cate',
 		'cateKR',
 		'cate_bg',
 		'cate_img',
 		'author_name',
+		'author_email',
+		'author_desg',
 	  ])
 
     return {

@@ -29,8 +29,8 @@ const SortingByDate = function (posts) {
 	return posts
 		.sort((post1, post2) => {
 
-			const beforeDate = DateTime.fromFormat(post1.date, "LLL dd yyyy");
-			const afterDate = DateTime.fromFormat(post2.date, "LLL dd yyyy");
+			const beforeDate = DateTime.fromFormat(post1.date_created, "LLL dd yyyy");
+			const afterDate = DateTime.fromFormat(post2.date_created, "LLL dd yyyy");
 			return afterDate - beforeDate;
 
 		})

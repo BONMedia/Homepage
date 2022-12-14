@@ -19,7 +19,7 @@ const PostCategory = ({ postData, allPosts }) => {
         <>
             <HeadMeta metaTitle={cateContent.cateKR}/>
             <HeaderOne />
-            <Breadcrumb aPage={cateContent.cateKR} />
+            <Breadcrumb aPage={cateContent.cateKR}  cLink={cateContent.cate}/>
             {/* Banner Start here  */}
             <div className="banner banner__default bg-grey-light-three">
                 <div className="container">
@@ -72,6 +72,7 @@ export async function getStaticProps({ params }) {
         'slug',
         'cate',
         'cateKR',
+        'cate_bg',
         'cate_img',
         'title',
         'excerpt',
@@ -80,6 +81,8 @@ export async function getStaticProps({ params }) {
         'post_views',
         'read_time',
         'author_name',
+        'author_desg',
+        'author_email',
         'author_social'
     ]);
 

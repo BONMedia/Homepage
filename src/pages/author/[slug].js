@@ -19,7 +19,7 @@ const PostAuthor = ({postData, allPosts}) => {
         <>
         <HeadMeta metaTitle={authorContent.author_name} />
         <HeaderOne />
-        <Breadcrumb aPage={authorContent.author_name} />
+        <Breadcrumb aPage={authorContent.author_name}  cLink={authorContent.author_name}/>
         <div className="banner banner__default bg-grey-light-three">
             <div className="container">
                 <div className="row align-items-center">
@@ -99,10 +99,12 @@ export async function getStaticProps({ params }) {
         'cate',
         'cateKR',
         'cate_img',
+        'cate_bg',
         'title',
         'excerpt',
         'featureImg',
-        'date',
+        'date_created',
+		'date_edited',
         'author_name',
         'author_img',
         'author_social',

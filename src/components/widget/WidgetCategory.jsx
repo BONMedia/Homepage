@@ -30,7 +30,6 @@ var cateList = Object.keys(category).map(cateTitle => {
 	}; 
 });
 
-console.log(cateList);
 
 const slideSettings = {
     infinite: true,

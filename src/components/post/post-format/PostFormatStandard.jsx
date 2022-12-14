@@ -17,31 +17,35 @@ const PostFormatStandard = ({postData, allData}) => {
 
     return (
       <>
-        <MetaDataOne metaData={postData} />
-        <div className="post-single-wrapper p-t-xs-60">
+        <MetaDataOne metaData={postData} postData={postData} allData={allData}/>
+        <div className="post-single-wrapper p-t-xs-60" style={{fontSize: '10px'}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
                 <main className="site-main">
                   <article className="post-details">
                     <div className="single-blog-wrapper">
-                      <SocialShareSide />
+                      {/* <SocialShareSide /> */}
                       <div dangerouslySetInnerHTML={{__html: postContent}}></div>
                     </div>
+                    <div className="post-bottom">
+                    <div className="post-bottom-text">{postData.author_desg} {postData.author_name} {postData.author_email}</div>
+                    <div className="post-bottom-text">ⓒ 부산일보(www.busan.com), 무단전재 및 수집, 재배포금지</div>
+                    </div>
+                    
                   </article>
-				  <SocialShareBottom />
+				  {/* <SocialShareBottom />
 				  <hr className="m-t-xs-50 m-b-xs-60" />
 				  <PostAuthor authorData={postData}/>
-				  <PostComment />
+				  <PostComment /> */}
                 </main>
               </div>
               <div className="col-lg-4">
                 <div className="post-sidebar">
                   <WidgetAd />
                   <WidgetNewsletter />
-                  <WidgetSocialShare />
                   <WidgetPost dataPost={allData} />
-                  <WidgetInstagram />
+                
                 </div>
               </div>
             </div>

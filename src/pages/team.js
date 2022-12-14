@@ -70,6 +70,7 @@ export async function getStaticProps() {
         'cate',
         'cate_bg',
         'author_name',
+        'author_email',
         'author_img',
         'author_desg',
         'author_social'

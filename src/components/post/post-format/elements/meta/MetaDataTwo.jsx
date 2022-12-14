@@ -5,7 +5,7 @@ import { slugify, SortingByDate } from "../../../../../utils";
 
 const MetaDataTwo = ({ metaData, allPost }) => {
 	SortingByDate(allPost);
-	const postDate = metaData.date.split(" ");
+	const postDate = metaData.date_created.split(" ");
 	
 	// const currentPostdateFormat = DateTime.fromFormat(metaData.date, "LLL dd yyyy");
 	

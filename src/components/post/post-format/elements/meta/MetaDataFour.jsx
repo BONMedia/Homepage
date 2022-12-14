@@ -28,7 +28,7 @@ const MetaDataFour = ({ metaData }) => {
 				</Link>
             </li>
             <li>
-              <i className="dot">.</i>{metaData.date}
+              <i className="dot">.</i>{metaData.date_created}
             </li>
 			<li>
 				<i className="feather icon-activity" />

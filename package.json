@@ -18,13 +18,16 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
     "react-responsive-masonry": "^2.1.6",
+    "react-share": "^4.4.1",
     "react-slick": "^0.29.0",
+    "react-to-print": "^2.14.10",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "sharp": "^0.31.1"
   },
   "devDependencies": {
     "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "node": "^14.20.1"
   }
 }

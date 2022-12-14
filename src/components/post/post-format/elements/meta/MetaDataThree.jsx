@@ -4,7 +4,7 @@ import { slugify } from "../../../../../utils";
 
 const MetaDataThree = ({ metaData }) => {
 
-	const postDate = metaData.date.split(" ");
+	const postDate = metaData.date_created.split(" ");
 	
   return (
     <div className="banner banner__default bg-grey-light-three">

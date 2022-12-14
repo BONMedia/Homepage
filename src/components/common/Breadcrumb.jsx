@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { slugify } from "../../utils";
 
-const Breadcrumb = ({bCat, aPage}) => {
+const Breadcrumb = ({bCat, aPage, cLink}) => {
   return (
     <div className="breadcrumb-wrapper">
       <div className="container">
@@ -12,9 +12,9 @@ const Breadcrumb = ({bCat, aPage}) => {
                     <a>Home</a>
                 </Link>
             </li>
-            {bCat ? 
+            {cLink &&  bCat? 
             <li className="breadcrumb-item">
-                <Link href={`/category/${slugify(bCat)}`} >
+                <Link href={`/category/${slugify(cLink)}`} >
                     <a>{bCat}</a>
                 </Link>
             </li>: ""

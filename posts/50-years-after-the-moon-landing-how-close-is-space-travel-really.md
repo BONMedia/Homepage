@@ -3,7 +3,8 @@ postFormat: 'standard'
 title: '50 Years After The Moon Landing How Close Is Space Travel, Really'
 excerpt: 'Cras sit amet maximus odio, finibus pulvinar nisl. Praesent sed sagittis diam. Integer sed volutpat mi, in ultrices tellus.'
 featureImg: '/images/posts/post_2.jpg'
-date: 'Jun 30 2020'
+date_created: 'Jun 30 2020'
+date_edited: 'Jul 30 2020'
 cate: 'Newsflash'
 cateKR: '속보'
 cate_bg: 'bg-color-purple-one'
@@ -12,6 +13,7 @@ post_views: '2K Views'
 post_share: '250 Shares'
 author_name: 'Amachea Jajah'
 author_desg: 'Publisher'
+author_email: 'ruyji@busan.com'
 author_img: '/images/author/amachea_jajah.png'
 author_bio: 'At 29 years old, my favorite compliment is being told that I look like my mom. Seeing myself in her image, like this daughter up top, makes me so proud of how far I’ve come, and so thankful for where I come from.'
 author_social:
@@ -43,8 +45,8 @@ For those of us who want to say thank you to our moms, it’s not always easy to
 
 These eight shots crystallize the hard work moms put into keeping their kids alive, happy, and healthy. They might give you the inspiration you need for filling out that card—or stand alone for your mom’s interpretation.
 
-![Single Post Images](/images/post-single/post-single-img-1.jpg)
-*Drawn for an insurance company*
+![Single Post Images](/images/post-single/Picture1.png)
+*Drawn for an insurance company* 
 
 Moms are the ones who bandage our boo-boos when we’re little and continue to take care of us as we get older—often sacrificing their own needs so they can help with ours. Cruising on a bike to help heal our injuries is the most mom thing one can do.
 
