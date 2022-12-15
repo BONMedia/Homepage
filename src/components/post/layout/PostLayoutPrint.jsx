@@ -15,7 +15,7 @@ const PostLayoutPrint = ({ postData, allData }) => {
 
   return (
     <div className="print"  >
-      <Image src="/images/Primary_black.png" height={"150px"} width={"305px"} />
+      <Image src="/images/Primary_black.png" height={150} width={305} alt='logo'/>
       <div className="banner banner__single-post banner__print">
         <div className="container">
           <div className="row align-items-center">
@@ -43,6 +43,7 @@ const PostLayoutPrint = ({ postData, allData }) => {
         <div className="print-container">
           <div>
             <div className="">
+            <blockquote className="article-blockquote">{postData.excerpt}</blockquote>
               <main className="site-main">
                 <article className="post-details">
                   <div className="single-blog-wrapper">

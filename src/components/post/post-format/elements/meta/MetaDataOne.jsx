@@ -73,7 +73,7 @@ const MetaDataOne = ({ metaData, postData, allData }) => {
                   onClick={() => copyToClipboard()}
 
                 >
-                  <Image src={copy} height={"22px"} width="22px" />
+                  <Image src={copy} height={22} width={22} alt='copy'/>
                 </div>
 
                 <div>
@@ -84,7 +84,7 @@ const MetaDataOne = ({ metaData, postData, allData }) => {
                         onClick={() => downloadPDF()}
                       >
                         {" "}
-                        <Image src={print} height={"22px"} width="22px" />
+                        <Image src={print} height={22} width={22} alt='print' />
                       </div>
                     )}
                     content={() => componentRef.current}
@@ -92,9 +92,11 @@ const MetaDataOne = ({ metaData, postData, allData }) => {
                 </div>
               </div>
             </div>
-            <div className="post-title-info" >
+            {metaData.author_name &&   <div className="post-title-info" >
               {metaData.author_desg}: {metaData.author_name} ({metaData.author_email})
-            </div>
+            </div>}
+          
+       
           </div>
           <div style={{ display: "none" }}>
           <div ref={componentRef} >

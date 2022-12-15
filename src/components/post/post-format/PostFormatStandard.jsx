@@ -8,7 +8,7 @@ import PostAuthor from "./elements/PostAuthor";
 import PostComment from "./elements/PostComment";
 import SocialShareBottom from "./elements/SocialShareBottom";
 import SocialShareSide from "./elements/SocialShareSide";
-
+import Image from "next/image";
 
 const PostFormatStandard = ({postData, allData}) => {
   const basePathLink = process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH ?? "" : "";
@@ -18,11 +18,16 @@ const PostFormatStandard = ({postData, allData}) => {
     return (
       <>
         <MetaDataOne metaData={postData} postData={postData} allData={allData}/>
-        <div className="post-single-wrapper p-t-xs-60" style={{fontSize: '10px'}}>
+      
+        <div className="post-single-wrapper p-t-xs-30" style={{fontSize: '10px'}}>
+          
           <div className="container">
+          <blockquote className="article-blockquote">{postData.excerpt}</blockquote>
             <div className="row">
-              <div className="col-lg-8">
+                       
+               <div className="col-lg-8">
                 <main className="site-main">
+                <Image src={postData.featureImg} width={624} height={379}	alt={'postData.name'}/>  
                   <article className="post-details">
                     <div className="single-blog-wrapper">
                       {/* <SocialShareSide /> */}

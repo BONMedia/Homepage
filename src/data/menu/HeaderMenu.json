@@ -25,7 +25,7 @@
         "submenu": [
             {
                 "sublabel": "유니버시티",
-                "subpath": "/category/cryptoresearch"
+                "subpath": "/category/cryptouniversity"
             },
             {
                 "sublabel": "리서치",

@@ -17,17 +17,21 @@ const HeaderOne = () => {
     for (let i = 0; i < dropdownSelect.length; i++) {
       const element = dropdownSelect[i];
       if (element.classList.contains("has-dropdown")) {
+
         dropdownList.push(element);
       }
     }
-
     dropdownList.forEach((element) => {
-      element.children[0].addEventListener("click", () => {
+      console.log(element.classList.contains("active"));
+    
         if (element.classList.contains("active")) {
+
           element.classList.remove("active");
           element.childNodes[1].classList.remove("opened");
         } else {
+
           dropdownList.forEach((submenu) => {
+            console.log(element ===submenu );
             if (element !== submenu) {
               submenu.classList.remove("active");
               submenu.childNodes[1].classList.remove("opened");
@@ -37,7 +41,7 @@ const HeaderOne = () => {
             }
           });
         }
-      });
+     
     });
   };
 
@@ -140,7 +144,7 @@ const HeaderOne = () => {
             </div>
           </div>
         </div>
-        <InfiniteSlider/>
+   
         <nav className="navbar bg-white">
           <div className="container">
             <div className="navbar-inner">
@@ -160,7 +164,7 @@ const HeaderOne = () => {
                 <ul className="main-navigation list-inline" ref={menuRef}>
                   {MenuData.map((data, index) =>
                     data.submenu ? (
-                      <li className="has-dropdown" key={index}>
+                      <li className="has-dropdown" key={index} onClick={()=> toggleDropdownMenu()}>
                       <a>{data.label}</a>
                         <ul className="submenu">
                           {data.submenu.map((data, index) => (
@@ -234,6 +238,7 @@ const HeaderOne = () => {
           </div>
         </nav>
       </header>
+      <InfiniteSlider/>
     </>
   );
 };

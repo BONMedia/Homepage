@@ -48,7 +48,7 @@ const PostCategory = ({ postData, allPosts }) => {
                         <div className="col-lg-4">
                             <div className="post-sidebar">
                                 <WidgetAd />
-                                <WidgetSocialShare />
+                             
                                 <WidgetCategory cateData={allPosts} />
                                 <WidgetPost dataPost={allPosts} />
                                 <WidgetAd img="/images/clientbanner/clientbanner3.jpg" height={492} width={320}/>

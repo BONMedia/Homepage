@@ -4577,8 +4577,9 @@ input[type="radio"] + label::after {
     color: #fff;
     transition: all 0.5s;
   }
-  .main-navigation li:hover {
+  .main-navigationnavigation li:hover {
     color: var(--grey-dark-one);
+    cursor: pointer;
   }
 }
 .main-navigation li.active > a::before,
@@ -4617,6 +4618,11 @@ input[type="radio"] + label::after {
 }
 .main-navigation .submenu li.has-dropdown {
   margin-right: 0;
+}
+
+.main-navigation .submenu li.has-dropdown:hover {
+  margin-right: 0;
+  cursor: pointer;
 }
 .side-navigation li {
   padding: 1rem 0;
@@ -5077,6 +5083,11 @@ input[type="radio"] + label::after {
 }
 .navbar.bg-white .main-navigation li {
   color: var(--grey-dark-one);
+}
+
+.navbar.bg-white .main-navigation li:hover {
+  color: var(--grey-dark-one);
+  cursor: pointer;
 }
 .navbar.bg-white .submenu {
   background: var(--color-white);
@@ -8693,17 +8704,27 @@ width: 3px;
 }
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 100px;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+  height: 50px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: baseline;
+  max-width: 1100px;
+}
+
+@media (max-width: 991px) {
+  .slider {
+    width: 90%;
+  }
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
   content: "";
-  height: 100px;
+  height: 50px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -8723,10 +8744,43 @@ width: 3px;
   width: calc(250px * 14);
 }
 .slider .slide {
-  height: 100px;
+  height: 50px;
   width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
+.slide-text-name {
+  color:var(--grey-dark-five);
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0px 10px;
 
+  line-height: 100%;
+}
+
+.slide-text-value {
+  color:var(--primary-font);
+  padding: 3px;
+  font-size: 12px;
+  margin: 0px 10px;
+  line-height: 100%;
+} 
+
+.slide-text-change {
+  /* color:var(--color-green-one); */
+
+  font-size: 12px;
+  margin: 0px 10px;
+  line-height: 100%;
+} 
+
+.article-blockquote {
+  font-style: italic;
+  margin: 2rem 0rem 5rem;
+  font-size: 15px;
+  padding: 3rem 4.5rem;
+}
 /* Splash Page Style  */
 

@@ -15,12 +15,14 @@ import HeaderThree from "../components/header/HeaderThree";
 import HeaderFour from "../components/header/HeaderFour";
 import HeaderFive from "../components/header/HeaderFive";
 import FooterTwo from "../components/footer/FooterTwo";
+import InfiniteSlider from "../components/slider/InfiniteSlider";
 const HomeOne = ({allPosts}) => {
  
   return ( 
     <>
-    <HeadMeta metaTitle="Home One"/>
+    <HeadMeta metaTitle="BON Media"/>
     <HeaderOne />
+    {/* <InfiniteSlider/> */}
     <PostSectionOne postData={allPosts} />
     <PostSectionTwo postData={allPosts}  adBanner={true}/>
    
