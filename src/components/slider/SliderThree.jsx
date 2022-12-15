@@ -41,10 +41,11 @@ const SliderThree = ({ postData }) => {
                 <div className="post-metas banner-post-metas post-meta-primary load-anim">
                   <ul className="list-inline">
                     <li>
-                      <span>By</span>
-                      <Link legacyBehavior href={`/author/${slugify(firstPost.author_name)}`}>
-                        <a className="post-author">{firstPost.author_name}</a>
-                      </Link>
+                    {data.author_name && (
+                    <div className="caption-meta">
+                      <span>By {data.author_name}</span>
+                    </div>
+                  )}
                     </li>
                   </ul>
                 </div>

@@ -62,7 +62,7 @@ const InfiniteSlider = () => {
           {tokens.map((token, index) => (
             <div className="slide" key={index}>
 				<p className="slide-text-name">{token.name}</p>
-				<p className="slide-text-value" style={{background: token.change[0] ==='-'?'rgba(26, 137, 23, 0.15)' :'rgba(186, 4, 2, 0.1)'}}>{token.value} <span className="slide-text-change">{token.change}</span></p>
+				<p className="slide-text-value" style={{background: token.change[0] ==='-'?'rgba(26, 137, 23, 0.15)' :'rgba(186, 4, 2, 0.1)'}}>{token.value} <span className="slide-text-change" style={{color: token.change[0] ==='-'? "rgba(26, 137, 23, 1)":"rgba(186, 4, 2, 1)"}}>{token.change}</span></p>
 			
              
             </div>

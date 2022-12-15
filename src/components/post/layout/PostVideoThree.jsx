@@ -36,10 +36,11 @@ const PostVideoThree = ({ data, imgWidth, imgHeight }) => {
             <div className="post-metas">
               <ul className="list-inline">
                 <li>
-				<span>By</span>
-				<Link legacyBehavior href={`/author/${slugify(data.author_name)}`}>
-					<a className="post-author">{data.author_name}</a>
-				</Link>
+                {data.author_name && (
+                    <div className="caption-meta">
+                      <span>By {data.author_name}</span>
+                    </div>
+                  )}
                 </li>
                 <li>
                   <i className="dot">.</i>{data.date}

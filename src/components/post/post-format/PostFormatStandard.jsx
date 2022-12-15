@@ -27,7 +27,7 @@ const PostFormatStandard = ({postData, allData}) => {
                        
                <div className="col-lg-8">
                 <main className="site-main">
-                <Image src={postData.featureImg} width={624} height={379}	alt={'postData.name'}/>  
+                <Image src={postData.featureImg} width={730} height={443}	alt={'postData.name'}/>  
                   <article className="post-details">
                     <div className="single-blog-wrapper">
                       {/* <SocialShareSide /> */}

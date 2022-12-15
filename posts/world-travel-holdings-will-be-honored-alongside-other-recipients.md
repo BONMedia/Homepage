@@ -1,6 +1,5 @@
 ---
 postFormat: 'standard'
-story: true
 title: 'World Travel Holdings Will Be Honored Alongside Other Recipients'
 excerpt: 'Curabitur egestas est vitae sem blandit tincidunt. Nunc cursus interdum odio sit amet gravida.'
 featureImg: '/images/posts/post_10.jpg'

@@ -24,17 +24,18 @@ const PostVideoTwo = ({ data, pClass, videoIcon }) => {
             </Link>
         </div>
         <h3 className="axil-post-title hover-line hover-line">
-           <Link legacyBehavior legacyBehavior href={`/post/${data.slug}`}>
+           <Link legacyBehavior href={`/post/${data.slug}`}>
 				<a>{data.title}</a>
 			</Link>
         </h3>
         <div className="post-metas">
           <ul className="list-inline">
             <li>
-				<span>By</span>
-				<Link legacyBehavior href={`/author/${slugify(data.author_name)}`}>
-					<a className="post-author">{data.author_name}</a>
-				</Link>
+            {data.author_name && (
+                    <div className="caption-meta">
+                      <span>By {data.author_name}</span>
+                    </div>
+                  )}
             </li>
           </ul>
         </div>

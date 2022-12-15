@@ -41,12 +41,12 @@ const PostLayoutPrint = ({ postData, allData }) => {
       </div>
       <div className="post-single-wrapper p-t-xs-30">
         <div className="print-container">
-          <div>
+          <div style={{padding:'0px 30px'}}>
             <div className="">
             <blockquote className="article-blockquote">{postData.excerpt}</blockquote>
               <main className="site-main">
                 <article className="post-details">
-                  <div className="single-blog-wrapper">
+                  <div className="single-blog-wrapper" >
                     {/* <SocialShareSide /> */}
                     <div
                       dangerouslySetInnerHTML={{ __html: postContent }}

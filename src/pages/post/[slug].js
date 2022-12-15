@@ -26,7 +26,7 @@ const PostDetails = ({postContent, allPosts}) => {
 		} else if (postContent.postFormat === 'text') {
 			return <PostFormatText postData={postContent} allData={allPosts} />
 		}else {
-			return <PostFormatStandard  postData={postContent} allData={allPosts} />
+			return  <PostFormatStandard  postData={postContent} allData={allPosts} />
 		}
 	}
 

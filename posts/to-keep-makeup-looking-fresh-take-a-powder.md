@@ -1,5 +1,5 @@
 ---
-postFormat: 'video'
+postFormat: 'standard'
 videoLink: '/images/post-format-video-1.mp4'
 title: 'To Keep Makeup Looking Fresh Take A Powder'
 excerpt: 'Curabitur egestas est vitae sem blandit tincidunt. Nunc cursus interdum odio sit amet gravida.'

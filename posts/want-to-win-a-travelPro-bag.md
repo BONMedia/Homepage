@@ -1,5 +1,5 @@
 ---
-postFormat: 'video'
+postFormat: 'standard'
 videoLink: '/images/post-format-video-1.mp4'
 title: 'Want to win a travel Pro bag'
 excerpt: 'Ut et feugiat dui. Nam fringilla, sem et mollis tincidunt, eros orci congue magna, eget lacinia erat metus vel tortor. Praesent efficitur ultricies felis.'
