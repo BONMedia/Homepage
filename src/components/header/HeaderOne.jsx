@@ -22,7 +22,6 @@ const HeaderOne = () => {
       }
     }
     dropdownList.forEach((element) => {
-      console.log(element.classList.contains("active"));
     
         if (element.classList.contains("active")) {
 
@@ -31,7 +30,6 @@ const HeaderOne = () => {
         } else {
 
           dropdownList.forEach((submenu) => {
-            console.log(element ===submenu );
             if (element !== submenu) {
               submenu.classList.remove("active");
               submenu.childNodes[1].classList.remove("opened");
@@ -211,7 +209,7 @@ const HeaderOne = () => {
                   </span>
                 </form>
 
-                <button
+                {/* <button
                   className="nav-search-field-toggler"
                   onClick={headerSearchShow}
                 >
@@ -221,7 +219,7 @@ const HeaderOne = () => {
                   <span />
                   <span />
                   <span />
-                </button>
+                </button> */}
               </div>
               <div
                 className={`main-nav-toggler d-block d-lg-none ${

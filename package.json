@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "axios": "^1.2.1",
     "bootstrap": "^5.2.0",
     "gray-matter": "^4.0.3",
     "luxon": "^3.0.3",
@@ -28,7 +29,6 @@
   },
   "devDependencies": {
     "eslint": "8.23.0",
-    "eslint-config-next": "^13.0.6",
-    "node": "^14.20.1"
+    "eslint-config-next": "^13.0.6"
   }
 }
