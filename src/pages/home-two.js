@@ -1,6 +1,6 @@
 import { getAllPosts } from "../../lib/api";
 import HeadMeta from "../components/elements/HeadMeta";
-import FooterOne from "../components/footer/FooterOne";
+import FooterTwo from "../components/footer/FooterTwo";
 import HeaderTwo from "../components/header/HeaderTwo";
 import PostSectionFive from "../components/post/PostSectionFive";
 import PostSectionSeven from "../components/post/PostSectionSeven";
@@ -19,7 +19,7 @@ const HomeTwo = ({allPosts}) => {
     <PostSectionSeven postData={allPosts} />
     <PostSectionFive postData={allPosts} />
     <PostSectionSix postData={allPosts} />
-    <FooterOne />
+    <FooterTwo />
     </>
    );
 }

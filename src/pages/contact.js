@@ -5,7 +5,7 @@ import ContactForm from "../components/contact/ContactForm";
 import ContactInfo from "../components/contact/ContactInfo";
 import HeadMeta from "../components/elements/HeadMeta";
 import SectionTitleTwo from "../components/elements/SectionTitleTwo";
-import FooterOne from "../components/footer/FooterOne";
+import FooterTwo from "../components/footer/FooterTwo";
 import HeaderOne from "../components/header/HeaderOne";
 
 const ContactPage = () => {
@@ -57,7 +57,7 @@ const ContactPage = () => {
                 </div>
                 {/* End of .container */}
             </div>
-            <FooterOne />
+            <FooterTwo />
         </>
     );
 }

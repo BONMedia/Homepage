@@ -1,6 +1,6 @@
 import Link from "next/link";
 import HeadMeta from "../components/elements/HeadMeta";
-import FooterOne from "../components/footer/FooterOne";
+import FooterTwo from "../components/footer/FooterTwo";
 import HeaderOne from "../components/header/HeaderOne";
 
 const ErrorPage = () => {
@@ -24,7 +24,7 @@ const ErrorPage = () => {
                 </div>
             </div>
 
-            <FooterOne />
+            <FooterTwo />
         </>
     );
 }

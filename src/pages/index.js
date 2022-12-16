@@ -1,6 +1,6 @@
 import { getAllPosts } from "../../lib/api";
 import HeadMeta from "../components/elements/HeadMeta";
-import FooterOne from "../components/footer/FooterOne";
+import FooterTwo from "../components/footer/FooterTwo";
 import HeaderOne from "../components/header/HeaderOne";
 import PostSectionFive from "../components/post/PostSectionFive";
 import PostSectionFour from "../components/post/PostSectionFour";
@@ -14,7 +14,6 @@ import HeaderTwo from "../components/header/HeaderTwo";
 import HeaderThree from "../components/header/HeaderThree";
 import HeaderFour from "../components/header/HeaderFour";
 import HeaderFive from "../components/header/HeaderFive";
-import FooterTwo from "../components/footer/FooterTwo";
 import InfiniteSlider from "../components/slider/InfiniteSlider";
 const HomeOne = ({allPosts}) => {
  

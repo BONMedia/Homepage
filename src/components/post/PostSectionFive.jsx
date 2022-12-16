@@ -22,7 +22,7 @@ const PostSectionFive = ({postData, adBanner, pClass}) => {
     })
 
  return ( 
-        <div className={`random-posts ${pClass ?? "section-gap"}`} style={{border:'1px solid green'}}>
+        <div className={`random-posts ${pClass ?? "section-gap"}`}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">

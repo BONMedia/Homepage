@@ -2,7 +2,7 @@ import { getAllPosts, getPostBySlug } from "../../../lib/api";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import HeadMeta from "../../components/elements/HeadMeta";
-import FooterOne from "../../components/footer/FooterOne";
+import FooterTwo from "../../components/footer/FooterTwo";
 import HeaderOne from "../../components/header/HeaderOne";
 import PostFormatAudio from "../../components/post/post-format/PostFormatAudio";
 import PostFormatGallery from "../../components/post/post-format/PostFormatGallery";

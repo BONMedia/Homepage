@@ -1,7 +1,7 @@
 import { getAllPosts } from "../../lib/api";
 import CategoryOne from "../components/category/CategoryOne";
 import HeadMeta from "../components/elements/HeadMeta";
-import FooterOne from "../components/footer/FooterOne";
+import FooterTwo from "../components/footer/FooterTwo";
 import HeaderThree from "../components/header/HeaderThree";
 import PostSectionFive from "../components/post/PostSectionFive";
 import SliderTwo from "../components/slider/SliderTwo";
@@ -15,7 +15,7 @@ const HomeThree = ({allPosts}) => {
     <SliderTwo slidePost={allPosts} />
     <CategoryOne cateData={allPosts} />
     <PostSectionFive postData={allPosts} pClass="section-gap bg-grey-light-three" />
-    <FooterOne />
+    <FooterTwo />
     </>
    );
 }

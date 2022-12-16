@@ -123,15 +123,11 @@ const HeaderOne = () => {
                     </a>
                   </li>
                   <li>
-                    <a href={SocialLink.instagram.url}>
-                      <i className={SocialLink.instagram.icon} />
+                    <a href={SocialLink.telegram.url}>
+                      <i className={SocialLink.telegram.icon} />
                     </a>
                   </li>
-                  <li>
-                    <a href={SocialLink.linked.url}>
-                      <i className={SocialLink.linked.icon} />
-                    </a>
-                  </li>
+              
                 </ul>
               </div>
             </div>

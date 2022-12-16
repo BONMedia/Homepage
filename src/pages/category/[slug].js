@@ -1,5 +1,5 @@
 import { getAllPosts } from "../../../lib/api";
-import FooterOne from "../../components/footer/FooterOne";
+import FooterTwo from "../../components/footer/FooterTwo";
 import HeaderOne from "../../components/header/HeaderOne";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import { slugify } from "../../utils";

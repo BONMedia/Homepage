@@ -41,18 +41,8 @@ const FooterTwo = () => {
                       </a>
                     </li>
                     <li>
-                      <a href={SocialLink.yt.url}>
-                        <i className={SocialLink.yt.icon} />
-                      </a>
-                    </li>
-                    <li>
-                      <a href={SocialLink.linked.url}>
-                        <i className={SocialLink.linked.icon} />
-                      </a>
-                    </li>
-                    <li>
-                      <a href={SocialLink.pinterest.url}>
-                        <i className={SocialLink.pinterest.icon} />
+                      <a href={SocialLink.telegram.url}>
+                        <i className={SocialLink.telegram.icon} />
                       </a>
                     </li>
                   </ul>

@@ -1,6 +1,6 @@
 {
     "fb": {
-        "url": "https://facebook.com/",
+        "url": "https://www.facebook.com/profile.php?id=100088650794098",
         "icon": "fab fa-facebook-f",
         "follower": "2000+"
     },
@@ -42,6 +42,11 @@
     "behance": {
         "url": "https://www.behance.net/",
         "icon": "fab fa-behance",
+        "follower": "2000+"
+    },
+    "telegram" : {
+        "url": "https://t.me/bonmedia",
+        "icon": "fab fa-telegram",
         "follower": "2000+"
     }
 }

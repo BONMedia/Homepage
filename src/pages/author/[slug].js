@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getAllPosts, getPostBySlug } from "../../../lib/api";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import HeadMeta from "../../components/elements/HeadMeta";
-import FooterOne from "../../components/footer/FooterOne";
+import FooterTwo from "../../components/footer/FooterTwo";
 import HeaderOne from "../../components/header/HeaderOne";
 import PostLayoutTwo from "../../components/post/layout/PostLayoutTwo";
 import WidgetAd from "../../components/widget/WidgetAd";
