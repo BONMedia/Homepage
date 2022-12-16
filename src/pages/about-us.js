@@ -44,7 +44,7 @@ const AboutUs = ({ aboutData, allPosts }) => {
                         <div className="col-lg-4">
                             <aside className="post-sidebar">
                                 <WidgetNewsletter />
-                                <WidgetSocialShare />
+                               
                                 <WidgetPost dataPost={allPosts} />
                             </aside>
                         </div>

@@ -11,7 +11,6 @@ import PostFormatStandard from "../../components/post/post-format/PostFormatStan
 import PostFormatText from "../../components/post/post-format/PostFormatText";
 import PostFormatVideo from "../../components/post/post-format/PostFormatVideo";
 import PostSectionSix from "../../components/post/PostSectionSix";
-import FooterTwo from "../../components/footer/FooterTwo";
 import PostLayoutPrint from '../../components/post/layout/PostLayoutPrint'
 const PostDetails = ({postContent, allPosts}) => {
 	const PostFormatHandler = () => {

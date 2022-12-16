@@ -10,8 +10,6 @@ import WidgetSocialShare from "../../components/widget/WidgetSocialShare";
 import WidgetPost from "../../components/widget/WidgetPost";
 import PostLayoutTwo from "../../components/post/layout/PostLayoutTwo";
 import WidgetCategory from "../../components/widget/WidgetCategory";
-import FooterTwo from "../../components/footer/FooterTwo";
-
 
 const PostCategory = ({ postData, allPosts }) => {
 

@@ -8,22 +8,27 @@ const ContactInfo = () => {
         <div className="axil-contact-info">
           <address className="address">
             <p className="mid m-b-xs-30">
-              Theodore Lowe, Ap #867-859
+              [48789] 부산시 동구 중앙대로 365 (수정동)
               <br />
-              Sit Rd, Azusa New York
             </p>
-            <div className="h5 m-b-xs-10">We&apos;re Available 24/ 7. Call Now.</div>
-            <div>
-              <a className="tel" href="tel:8884562790">
-                <i className="fas fa-phone" />
-                (888) 456-2790
-              </a>
+            <div className="h5 m-b-xs-10">
+              We&apos;re Available 24/ 7. Call Now.
             </div>
             <div>
-              <a className="tel" href="tel:12125553333">
-                <i className="fas fa-fax" />
-                (121) 255-53333
-              </a>
+              <p className="tel">
+                <i className="fas fa-phone" />
+                (051) 461-4114
+              </p>
+              <br></br>
+              <p className="tel">
+                <i className="fas fa-envelope" />
+                admin@bonmedia.kr
+              </p>
+            </div>
+            <div>
+            <p className="tel">
+              <i className="fas fa-building" />
+             사업자번호: 180111-1473238</p>
             </div>
           </address>
           {/* End of address */}
@@ -40,14 +45,10 @@ const ContactInfo = () => {
                   <i className={SocialLink.twitter.icon} />
                 </a>
               </li>
+
               <li>
-                <a href={SocialLink.yt.url}>
-                  <i className={SocialLink.yt.icon} />
-                </a>
-              </li>
-              <li>
-                <a href={SocialLink.linked.url}>
-                  <i className={SocialLink.linked.icon} />
+                <a href={SocialLink.telegram.url}>
+                  <i className={SocialLink.telegram.icon} />
                 </a>
               </li>
             </ul>
