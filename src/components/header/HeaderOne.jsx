@@ -99,11 +99,6 @@ const HeaderOne = () => {
                 <ul className="header-top-nav list-inline justify-content-center justify-content-md-start">
                   <li className="current-date">{dateFormate()}</li>
                   <li>
-                    <Link legacyBehavior href="/">
-                      <a>Advertisement</a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link legacyBehavior href="/about-us">
                       <a>About</a>
                     </Link>

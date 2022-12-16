@@ -1,9 +1,5 @@
 [
     {
-        "label": "속보",
-        "path": "/category/newsflash"
-    },
-    {
         "label": "마켓",
         "path": "/category/market"
     },
