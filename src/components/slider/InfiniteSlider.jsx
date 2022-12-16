@@ -1,6 +1,9 @@
 import Image from "next/image";
 import copy from "../../assets/copy.svg";
 import print from "../../assets/print.svg";
+import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
+import { IconContext } from "react-icons";
+
 const InfiniteSlider = () => {
   const tokens = [
     {
@@ -61,10 +64,38 @@ const InfiniteSlider = () => {
         <div className="slide-track">
           {tokens.map((token, index) => (
             <div className="slide" key={index}>
-				<p className="slide-text-name">{token.name}</p>
-				<p className="slide-text-value" style={{background: token.change[0] ==='-'?'rgba(26, 137, 23, 0.15)' :'rgba(186, 4, 2, 0.1)'}}>{token.value} <span className="slide-text-change" style={{color: token.change[0] ==='-'? "rgba(26, 137, 23, 1)":"rgba(186, 4, 2, 1)"}}>{token.change}</span></p>
-			
-             
+              <p className="slide-text-name">{token.name}</p>
+              <p
+                className="slide-text-value"
+                style={{
+                  background:
+                    token.change[0] === "-"
+                      ? "rgba(26, 137, 23, 0.15)"
+                      : "rgba(186, 4, 2, 0.1)",
+                }}
+              >
+                {token.value}{" "}
+                <span
+                  className="slide-text-change"
+                  style={{
+                    color:
+                      token.change[0] === "-"
+                        ? "rgba(26, 137, 23, 1)"
+                        : "rgba(186, 4, 2, 1)",
+                  }}
+                >
+                  {token.change}
+                </span>
+              </p>
+
+
+              <IconContext.Provider
+                value={{ color: token.change[0] === "-"? 'rgba(26, 137, 23, 1)':"rgba(186, 4, 2, 1)", className: "global-class-name" }}
+              >
+                <div> { token.change[0] === "-"? <AiFillCaretDown/> :  <AiFillCaretUp />}
+                
+                </div>
+              </IconContext.Provider>
             </div>
           ))}
         </div>

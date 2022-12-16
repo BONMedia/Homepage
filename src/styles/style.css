@@ -4397,7 +4397,7 @@ input[type="radio"] + label::after {
 .axil-contact-form-block .form-group label {
   background: var(--color-white);
 }
-.subscription-form .input-border {
+.subscriptionform .input-border {
   width: 100%;
   left: 0;
 }
@@ -5756,7 +5756,7 @@ margin-bottom: 3rem;
   line-height: 6.2rem;
   color: var(--primary-color);
 }
-.subscription-form .form-group {
+.subscriptionform .form-group {
   margin-bottom: 2rem;
 }
 .weekly-newsletter {
